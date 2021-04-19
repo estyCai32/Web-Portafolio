@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    background-color: beige;
+    color: #7510F7;
+    font-weight: 300;
+}
+
+.logo{
+    font-size: 40px;
+}
+
+nav .menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+li, a{
+    text-decoration: none;
+}
+
+nav .menu ul li{
+    margin-left: 20px;
+}
+
+nav .menu ul li:nth-child(2){
+    padding: 5px;
+    border-width: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #7510F7;
+}
+
+nav .menu ul li:nth-child(2) a{  
+    padding: 5px 10px 5px 10px;
+}
+
+nav .menu ul li:nth-child(2):hover{
+    transition: 0.5s;
+    background-color: #7510F7; 
+}
+
+nav .menu ul li:nth-child(2) a:hover{
+    transition: 0.5s;
+    color: white;
+}
+
+
+
+
+
+
+/* -----------------SECTION   ---------- */
+section {
+    background-color: beige;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+}
+section .texto{
+    margin-top: 80px;
+    position: relative;
+    height: 20%;
+}
+
+section .texto h3{
+    font-size: 45px;
+    text-align: center;
+}
+
+section .texto h6{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+section .texto h6 span{
+    font-weight: 600;
+}
+
+section .img-avatar{
+    margin-top: 30px;
+    height: 30%;
+
+  
+}
+
+section .img-prog img{
+    height: 200px;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* --------------------------------------------- */
+
+
+
+
+.texto-presentacion{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    color: white;
+    background-color: #7510F7; 
+    font-family: inconsolata ;
+    z-index: 1;
+}
+
+.texto-presentacion .texto-contenido{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:70%;
+    width: 100%;
+}
+
+.texto-contenido h5{
+    padding: 15px;
+    font-size: 40px;
+ 
+}
+
+.texto-contenido p{
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+
+
+
+/* -------------------------------------- */
+
+.hab-cuadro{
+    font-family: inconsolata ;
+    background-color: beige;
+    width: 70%;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: repeat(3, 1fr);
+ 
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    top: -250px;
+
+    border-radius: 20px;
+    
+}
+
+.hab-cuadro .titulo{
+    grid-column: 1/-1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+  
+    border-bottom: solid ;
+    border-width: 0.1px;
+    border-color: grey;
+}
+
+.hab-cuadro .hab{   
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+.hab:nth-child(3) {
+    border-right: solid ;
+    border-left: solid ;
+    border-width: 0.1px;
+    border-color: grey;
+    border-radius: 0;
+}
+
+.hab i{
+    padding: 10px;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.hab-sub{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hab-sub h5{  
+    font-size: 25px;
+}
+
+.hab-list{
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    
+    
+}
+
+.hab-list p{
+   font-size: 20px;
+   text-transform: uppercase;
+   font-weight: 600;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+.hab-list ul{
+    list-style: none;
+}
+
+.hab-list ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hab-list ul li i{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.java{
+    font-weight: 600;
+}
+
+
+
+
