@@ -15,9 +15,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px 0px 20px;
-    background-color: beige;
+    background-color: white;
     color: #7510F7;
     font-weight: 300;
+    font-family: 'Inconsolata';
 }
 
 .logo{
@@ -69,7 +70,7 @@ nav .menu ul li:nth-child(2) a:hover{
 
 /* -----------------SECTION   ---------- */
 section {
-    background-color: beige;
+    background-color: white;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -106,14 +107,26 @@ section .img-avatar{
   
 }
 
-section .img-prog img{
-    height: 200px;
+section .img-prog {
+    /* height: 200px;
     width: 40%;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin: auto; */
+    
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    margin-top: 100px;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
 }
 
 /* --------------------------------------------- */
@@ -129,6 +142,17 @@ section .img-prog img{
     background-color: #7510F7; 
     font-family: inconsolata ;
     z-index: 1;
+}
+
+.texto-presentacion::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(to top,#fff,#7510F7 );
+    border: none;
+    z-index: 1000;
 }
 
 .texto-presentacion .texto-contenido{
@@ -161,7 +185,7 @@ section .img-prog img{
 
 .hab-cuadro{
     font-family: inconsolata ;
-    background-color: beige;
+    background-color: white;
     width: 70%;
     height: 800px;
     display: grid;
@@ -194,7 +218,7 @@ section .img-prog img{
 }
 
 .hab-cuadro .hab{   
-    background-color: beige;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,6 +287,169 @@ section .img-prog img{
 .java{
     font-weight: 600;
 }
+
+
+
+
+
+/* ---------------PROYECTOS---------------------------- */
+.contenedor{
+    DI
+}
+
+.proyectos{
+    position: relative;
+    top: -200px;
+
+    width: auto;
+    padding: 20px; 
+    font-family: 'Inconsolata', monospace;
+}
+
+.proyectos-conteiner{
+    width: auto; 
+    height: 100%;
+    position: relative;
+
+}
+
+.proyectos-conteiner h4{
+    font-size: 24px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+   
+}
+
+.proyectos-cards{
+    height: 80%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 40px;
+    flex-wrap: wrap;
+    cursor: pointer ;
+
+}
+
+.card{
+    margin: 10px;
+    background-color: skyblue;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: relative;
+
+}
+
+.card::before{
+    content: '';
+    width: 500px;
+    height: 300px;
+    opacity: 0.7;
+    position: absolute;
+  
+    background: rgb(48,136,243);
+    background: linear-gradient(142deg, rgba(48,136,243,1) 0%, rgba(112,49,172,1) 86%);
+}
+
+.card h5{
+    position: relative;
+    color: white;
+
+}
+
+.card:nth-child(1){
+    background: url(recursos/aim.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card:nth-child(2){
+    background: url(recursos/cronometro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* ---------FOOTER-------------------------------------------------------------- */
+footer{
+    position: relative;
+    min-height: 30vh;
+    background: #7510F7 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    top: -99px;
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(to bottom,#fff,#7510F7 );
+    border: none;
+    margin: none;
+    z-index: 1000;
+}
+
+.redes-conteiner{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-conteiner ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-conteiner ul li{
+    margin: 5px;
+    border: #fff solid;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.redes-conteiner ul li i{
+    font-size: 30px;
+    color: #fff;
+}
+
+.redes-txt{
+    display: flex;
+    margin-bottom: 25px;
+    font-family: inconsolata ;
+}
+
+.redes-txt p{
+    color: #fff;
+}
+
+
+
+
 
 
 
