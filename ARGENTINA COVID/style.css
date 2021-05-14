@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+
+.mapdiv path{
+    fill: white;
+    stroke: yellow;
+    stroke-width: 4px;
+    transition: fill 0.3s;
+}
+
+.mapdiv path:hover{
+    fill: violet;
+}
+
+.info{
+    width: 200px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    /* display: none; */
+}
+
+.ocultar{
+    display: none;
+}
+
+#info-close{
+    padding: 5px;
+    background: red;
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 100%;
+}
+
+
+#info-title{
+    text-align: center;
+}
+
+.info-casos #dato{
+    color: yellow;
+}
+
+.info-Muertes #dato{
+    color: red;
+}
+
+.info-vacunados #dato{
+    color: rgb(40, 162, 202);
+}
+
+/* #triangulo{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -100%;
+        width: 0;
+        height: 0;
+        border-top: 50px solid aqua;
+        border-right: 50px solid transparent;
+        border-left: 50px solid transparent; 
+}*/
+

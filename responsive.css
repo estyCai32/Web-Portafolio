@@ -1,0 +1,201 @@
+.burger-menu{
+    display: none;
+    font-size: 30px;
+}
+
+.carrousel{
+    display: none;
+}
+
+@media (max-width:450px){
+    nav .menu{
+        display: none;
+    }
+
+    .burger-menu{
+        display: inline-block;
+    }
+
+    
+    .texto-presentacion{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        font-family: inconsolata;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .texto-contenido{
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .hab-cuadro{
+        display: none;
+    }
+
+    .carrousel{
+        display: block;
+    }
+
+    .glider div{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        background: none;
+        width: 90%;
+    }
+
+    .glider .titulo{
+        font-size: 20px;
+        border: solid;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .hab, .hab li i,  .hab li{
+        font-size: 14px;
+    }
+
+    .hab{
+        padding: 25px 5px 25px 5px;
+        border: solid;     
+        border-radius: 10px;
+        font-family: inconsolata;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hab:nth-child(3){
+        border-radius: 20px;
+        padding: 25px 5px 25px 5px;
+        border: solid;
+    }
+
+    .hab-list{
+        padding: 10px;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectos {
+        margin-top:50px ;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        font-family: 'Inconsolata', monospace;
+    }
+
+    .proyectos-conteiner{
+        padding: 0px;
+    }
+    .proyectos-conteiner h4{
+        margin-bottom: 25px;
+    }
+
+    .proyectos-cards{
+        padding: 0px;
+        display: flex;
+    }
+   
+    .proyectos-cards a{
+
+    }
+
+    .proyectos-cards a div, .proyectos-cards a div::before {
+        width: 300px;
+        height: 150px;
+    }
+
+    .btns{
+        margin-top: 70px;
+        position: relative;
+        top: 0;
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+
+
+
+
+
+
+
+
+
+    
+    /* MENU NAVEGACION */
+
+    .clip-menu{
+        background-color: #7510F7;
+        color: white;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        text-align: right;
+        top: 0;
+        font-family: 'Inconsolata';
+        clip-path: circle(0% at 100% 0);
+        transition: .7s ease;
+    }
+
+    #close-btn{
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .active{
+        clip-path: circle(142% at 100% 0);
+    }
+
+    .menu-responsive{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-responsive ul{
+        list-style: none;
+    }
+
+    .menu-responsive ul li{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .menu-responsive ul li a{
+        color: white;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

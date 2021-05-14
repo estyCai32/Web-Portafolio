@@ -21,6 +21,7 @@ nav{
     font-family: 'Inconsolata';
 }
 
+
 .logo{
     font-size: 40px;
 }
@@ -35,6 +36,7 @@ nav .menu ul{
 
 li, a{
     text-decoration: none;
+    font-size: 30px;
 }
 
 nav .menu ul li{
@@ -63,6 +65,14 @@ nav .menu ul li:nth-child(2) a:hover{
     color: white;
 }
 
+.burger-menu{
+    font-family:    Inconsolata;
+    display: none;
+}
+
+.clip-menu{
+    display: none;
+}
 
 
 
@@ -293,9 +303,7 @@ img{
 
 
 /* ---------------PROYECTOS---------------------------- */
-.contenedor{
-    DI
-}
+
 
 .proyectos{
     position: relative;
@@ -372,11 +380,21 @@ img{
     background-position: center;
 }
 
-.card:nth-child(2){
+#reloj-ui{
     background: url(recursos/cronometro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#covid-arg{
+    background: url(recursos/covid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -394,10 +412,10 @@ footer{
 
 footer::before{
     content: '';
-    position: absolute;
-    top: -99px;
+    position: relative;
+    top: -50px;
     width: 100%;
-    height: 100px;
+    height: 50px;
     background:linear-gradient(to bottom,#fff,#7510F7 );
     border: none;
     margin: none;
@@ -447,6 +465,37 @@ footer::before{
     color: #fff;
 }
 
+/* ---------------------BOTONES------------------- */
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+    top: -150px;
+}
+
+.btns button{
+    font-family: Inconsolata;
+    font-size: 28px;
+    font-weight: 700;
+    height: 10vh;
+    width: 50vh;
+    margin: 15px;
+    border-radius: 50px;
+    background-color: #7510F7 ;
+    color: #fff;
+    border: white none;
+    transition: 0.5s;
+}
+
+.btns button:hover{
+    background-color: #fff;
+    color:#7510F7;
+    border: #7510F7 solid;
+}
 
 
 
