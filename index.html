@@ -18,14 +18,14 @@
 <body>
 
     <nav>
-        <div class="logo">
+        <div class="logo wow animate__animated animate__backInDown" data-wow-duration="1">
             <i class="fi-xnsuxl-code-solid"></i>
         </div>
 
         <div class="menu">
             <ul>
-                <li><a href="#">PROYECTOS</a></li>
-                <li><a href="#" id="contact">CONTACTO</a></li>
+                <li class="wow animate__animated animate__backInDown" data-wow-duration="1.5s"><a href="#">PROYECTOS</a></li>
+                <li class="wow animate__animated animate__backInDown" data-wow-duration="2s"><a href="#" id="contact">CONTACTO</a></li>
             </ul>
         </div>
 
@@ -45,12 +45,12 @@
     </div>
 
     <section>
-        <div class="texto animate__animated animate__backInLeft">
-            <h3>Full-Stack Developer</h3>
-            <h6>Estudiante en Desarrollo Web que ama lo que hace y con <span>muchas</span> Ganas de Aprender </h6>
+        <div class="texto " >
+            <h3 class="wow animate__animated animate__backInLeft" data-wow-duration="2s">Full-Stack Developer</h3>
+            <h6 class="wow animate__animated animate__backInLeft" data-wow-duration="2.5s">Estudiante en Desarrollo Web que ama lo que hace y con <span>muchas</span> Ganas de Aprender </h6>
         </div>
 
-        <div class="img-avatar">
+        <div class="img-avatar wow animate__animated animate__backInRight" data-wow-duration="3s">
             <img src="recursos/mf-avatar.svg" alt="" srcset="">
         </div>
 
@@ -64,8 +64,8 @@
 
         <div class="texto-presentacion">
             <div class="texto-contenido">
-                <h5>Hola Papa, Encantado de conocerte</h5>
-                <p>
+                <h5 class="wow animate__animated slideInLeft">Hola Papa, Encantado de conocerte</h5>
+                <p class="wow animate__animated slideInRight">
                     Me presento mi nombre es Esteban Barone, Estudiante de la carrera Tecnicatura en
                     Desarrollo Web en la Universidad Nacional de la
                     Matanza. Me destaco en cosas como capacidad De Trabajo en Equipo, Proactivo,
@@ -220,20 +220,20 @@
 
             <div class="proyectos-cards">
                 <a href="AimTrainer-V1-main/AimTrainer-V1-main/AimTrainer V1/index.html" target="_blank">
-                    <div class="card">
+                    <div class="card wow animate__animated slideInLeft">
                         <h5>AIM TRAINER GAME</h5>
                     </div>
                 </a>
 
                 <a href="Cronometro-JS-Puro-main/Cronometro/index.html" target="_blank">
-                    <div class="card" id="reloj-ui">
+                    <div class="card wow animate__animated slideInLeft" id="reloj-ui">
                         <h5>RELOJ UI</h5>
                     </div>
                 </a>
 
 
                 <a href="ARGENTINA COVID/index.html" target="_blank">
-                    <div class="card" id="covid-arg">
+                    <div class="card wow animate__animated slideInLeft" id="covid-arg">
                         <h5>ARGENTINA COVID-TRACKER</h5>
                         <p>Proximamente</p>
                     </div>
@@ -255,10 +255,10 @@
     <footer>
         <div class="redes-conteiner">
             <ul>
-                <li class="wow animate__animated animate__backInUp" data-wow-duration="2.5s"><a href="https://www.facebook.com/estebannicolas.barone/"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="wow animate__animated animate__backInUp" data-wow-duration="2s"><a href="https://twitter.com/estebanb30"><i class="fab fa-twitter"></i></a></li>
-                <li class="wow animate__animated animate__backInUp" data-wow-duration="1.5s"><a href="https://www.instagram.com/estebanbarone_/"><i class="fab fa-instagram"></i></a></li>
-                <li class="wow animate__animated animate__backInUp" ><a href="https://github.com/estyCai32"><i class="fab fa-github"></i></a></li>
+                <li class="wow animate__animated animate__backInUp" ><a href="https://www.facebook.com/estebannicolas.barone/"><i class="fab fa-facebook-f"></i></a></li>
+                <li class=" animate__animated animate__backInUp" ><a href="https://twitter.com/estebanb30"><i class="fab fa-twitter"></i></a></li>
+                <li class=" animate__animated animate__backInUp" ><a href="https://www.instagram.com/estebanbarone_/"><i class="fab fa-instagram"></i></a></li>
+                <li class=" animate__animated animate__backInUp" ><a href="https://github.com/estyCai32"><i class="fab fa-github"></i></a></li>
             </ul>
         </div>
 
@@ -274,8 +274,11 @@
     <script src="Glider.js-master/glider.min.js"></script>
     <script src="script.js"></script>
     <script defer src="https://friconix.com/cdn/friconix.js"> </script>
-    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
     <script src="/WOW-master/WOW-master/dist/wow.min.js"></script>
+    
     <script>
         new WOW().init();
     </script>

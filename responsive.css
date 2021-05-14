@@ -153,6 +153,7 @@
         font-family: 'Inconsolata';
         clip-path: circle(0% at 100% 0);
         transition: .7s ease;
+        display: block;
     }
 
     #close-btn{
